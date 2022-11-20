@@ -1,0 +1,15 @@
+<%=title%>
+<%- include('header');%>
+<div id>
+    <h3>students</h3>
+    <ul>
+      <% for(student of students){%> <%- include('studentlistItem'); %> <%}%>
+    </ul>
+  </div>
+  <div>
+    <h3>upcoming interview</h3>
+    <ul>
+      <% for(interview of interviews){%> <%- include('interviewsListItem'); %>
+      <%}%>
+    </ul>
+  </div>
