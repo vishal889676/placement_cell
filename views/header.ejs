@@ -1,0 +1,34 @@
+<header>
+<ul>
+    <% if (locals.user) { %>
+        <li><h3>hello</h3>
+            <%=user.username %></li>
+        <li>
+            <a href="/users/sinout">sinout</a>
+            <div>
+               <li>
+            <h1>download csv file</h1>
+            <a href="csv/downloadcsv">Download</a>
+              </li>
+               <li>
+                <h1>add student</h1>
+                <a href="/students/addStudent"> Add Student</a>
+                </li>
+                <li>
+                    <h1>add interview</h1>
+                    <a href="/interview/addInterview"> Add Interview</a>
+                    </li>
+         </div>
+        </li>
+        <%} else { %>
+             <li>
+                <a href="/users/login">login</a>
+            </li            
+            <li> 
+              <a href="/users/sinup">sinup</a>
+            </li
+        <% } %>
+
+</ul>
+</header>
+
