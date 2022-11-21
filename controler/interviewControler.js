@@ -1,6 +1,6 @@
 const Interview = require("../database/interview");
 module.exports.addInterview = function (req, res) {
-  if (req.cookies.user_id) {
+  if (req.user) {
     return res.render("addinterview", {
       title: "Add Student",
     });
